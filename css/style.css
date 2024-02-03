@@ -1,3 +1,5 @@
+/* FONTS */
+
 @font-face {
     font-family: "Calamity Regular";
     src: url("../fonts/CalamityRegular/CalamityRegular.otf");
@@ -8,10 +10,44 @@
     src: url("../fonts/CalamityRegular/CalamityBold.otf");
 }
 
+/* GENERAL STYLE */
+
 body {
     font-family: Calamity Regular;
     color: white;
     background-color: black;
     min-height: 100vh;
     min-width: 100vh;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.heart-gauge {
+    display: flex;
+    align-self: flex-start;
+}
+
+.heart-gauge__heart {
+    width: 20px;
+    margin-right: 1px;
+}
+
+.title {
+    text-align: center;
+}
+
+h1 {
+    font-family: Calamity Bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.title > p {
+    text-align: center;
+    color: rgba(255, 255, 0, 0.87);
 }

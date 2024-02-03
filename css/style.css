@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Calamity Regular";
+    src: url("../fonts/CalamityRegular/CalamityRegular.otf");
+}
+
+@font-face {
+    font-family: "Calamity Bold";
+    src: url("../fonts/CalamityRegular/CalamityBold.otf");
+}
+
+body {
+    font-family: Calamity Regular;
+    color: white;
+    background-color: black;
+    min-height: 100vh;
+    min-width: 100vh;
+}

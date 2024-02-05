@@ -97,7 +97,7 @@ h1 {
 }
 
 
-/* CONTENT STYLE */
+/* MENU */
 
 main {
     height: 50%;
@@ -111,3 +111,77 @@ main {
     clip-path: inset(-5px 3px -5px -5px); /* remove border/shadow on the right side for style purposes */
     border-right: none;
 }
+
+menu > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    font-family: Calamity Bold;
+    font-size: 1.6rem;
+    width: 30%;
+    height: 4rem;
+    margin: 1rem 0;
+    border: solid 2px #2B2B24;
+    outline: solid 2px black;
+    border-radius: 2px;
+}
+
+.menu__selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #2B2B24;
+    width: 2rem;
+    height: calc(100% - 4px);
+    margin: 2px 2px 2px 0;
+}
+
+.menu__selector--inactive {
+    background-color: black;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+}
+
+.menu__selector--active {
+    background-color: rgba(255, 255, 0, 0.87);
+    width: 6px;
+    height: 6px;
+    border: 3px solid #2B2B24;
+    outline: 2px solid rgba(255, 255, 0, 0.87);
+    border-radius: 100%;
+    box-shadow: 0 0 8px 4px rgba(255, 255, 0, 0.87);
+}
+
+.menu__selector--active::after {
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 0, 0.87);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: pulsate 2.5s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0.0;
+    content: "";
+  }
+  @keyframes pulsate {
+    0% {
+      transform: scale(1, 1);
+      opacity: 0.0;
+    }
+    50% {
+      opacity: 1.0;
+    }
+    100% {
+      transform: scale(3.5, 3.5);
+      opacity: 0.0;
+    }
+  }

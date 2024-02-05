@@ -43,7 +43,7 @@ body {
     font-family: Calamity Regular;
     color: white;
     /* background-color: black; */
-    min-height: 100%;
+    height: 100%;
     min-width: 100%;
     z-index: 2;
 }
@@ -94,4 +94,20 @@ h1 {
 .rupees__icon {
     height: 32px;
     margin-right: 10px;
+}
+
+
+/* CONTENT STYLE */
+
+main {
+    height: 50%;
+}
+
+#container {
+    margin: 5rem 0 4rem 4rem;
+    padding: 3rem;
+    height: 50%;
+    box-shadow: inset 0 0 2px 1px rgb(128, 128, 128, 0.4); /* box shadow for smoother borders */
+    clip-path: inset(-5px 3px -5px -5px); /* remove border/shadow on the right side for style purposes */
+    border-right: none;
 }

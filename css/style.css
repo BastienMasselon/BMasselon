@@ -24,20 +24,21 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 3rem 4rem;
 }
 
-.heart-gauge {
+#heart-gauge {
     display: flex;
     align-self: flex-start;
 }
 
 .heart-gauge__heart {
-    width: 20px;
-    margin-right: 1px;
+    width: 19px;
+    margin-right: 2px;
 }
 
-.title {
+#title {
     text-align: center;
 }
 
@@ -47,7 +48,21 @@ h1 {
     text-align: center;
 }
 
-.title > p {
+#title > p {
     text-align: center;
     color: rgba(255, 255, 0, 0.87);
+}
+
+#rupees {
+    display: flex;
+    align-items: center;
+}
+
+#rupees > p {
+    font-size: 1.1rem;
+}
+
+.rupees__icon {
+    height: 32px;
+    margin-right: 10px;
 }

@@ -10,6 +10,16 @@
     src: url("../fonts/CalamityRegular/CalamityBold.otf");
 }
 
+
+/* VARIABLES */
+
+:root {
+    --calamity-white: rgb(254, 255, 227);
+    --calamity-yellow: rgba(255, 255, 0, 0.87);
+    --calamity-dark-gray: rgb(43, 43, 36);
+}
+
+
 /* GENERAL STYLE */
 
 body {
@@ -41,7 +51,7 @@ body {
 #wrapper {
     position: relative;
     font-family: Calamity Regular;
-    color: white;
+    color: var(--calamity-white);
     /* background-color: black; */
     height: 100%;
     min-width: 100%;
@@ -79,7 +89,7 @@ h1 {
 
 #title > p {
     text-align: center;
-    color: rgba(255, 255, 0, 0.87);
+    color: var(--calamity-yellow);
 }
 
 #rupees {
@@ -107,7 +117,7 @@ main {
     margin: 5rem 0 4rem 4rem;
     padding: 3rem;
     height: 50%;
-    box-shadow: inset 0 0 2px 1px rgb(128, 128, 128, 0.4); /* box shadow for smoother borders */
+    box-shadow: inset 0 0 2px 1px rgba(128, 128, 128, 0.4); /* box shadow for smoother borders */
     clip-path: inset(-5px 3px -5px -5px); /* remove border/shadow on the right side for style purposes */
     border-right: none;
 }
@@ -119,10 +129,10 @@ menu > li {
     background-color: black;
     font-family: Calamity Bold;
     font-size: 1.6rem;
-    width: 30%;
-    height: 4rem;
+    width: 24em;
+    height: 4.5rem;
     margin: 1rem 0;
-    border: solid 2px #2B2B24;
+    border: solid 2px var(--calamity-dark-gray);
     outline: solid 2px black;
     border-radius: 2px;
     transition: all 0.3s ease-in-out;
@@ -132,6 +142,13 @@ menu > li:hover {
     box-shadow: 0 0 12px 3px rgb(254, 254, 229, 0.5);
     border: 2px solid rgb(254, 254, 229);
     outline: unset;
+    animation: glow 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes glow {
+    50% {
+        border: 2px solid rgba(254, 254, 229, 0.5);
+    }
 }
 
 .menu__selector {
@@ -139,7 +156,7 @@ menu > li:hover {
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: #2B2B24;
+    background-color: var(--calamity-dark-gray);
     width: 2rem;
     height: calc(100% - 4px);
     margin: 2px 2px 2px 0;
@@ -153,19 +170,19 @@ menu > li:hover {
 }
 
 .menu__selector--active {
-    background-color: rgba(255, 255, 0, 0.87);
+    background-color: var(--calamity-yellow);
     width: 6px;
     height: 6px;
     border: 3px solid #2B2B24;
-    outline: 2px solid rgba(255, 255, 0, 0.87);
+    outline: 2px solid var(--calamity-yellow);
     border-radius: 100%;
-    box-shadow: 0 0 8px 4px rgba(255, 255, 0, 0.87);
+    box-shadow: 0 0 8px 4px var(--calamity-yellow);
 }
 
 .menu__selector--active::after {
     position: absolute;
     background-color: transparent;
-    border: 1px solid rgba(255, 255, 0, 0.87);
+    border: 1px solid var(--calamity-yellow);
     width: 10px;
     height: 10px;
     border-radius: 100%;
@@ -192,3 +209,21 @@ menu > li:hover {
       opacity: 0.0;
     }
   }
+
+.menu__item {
+    display: flex;
+    justify-content: center;
+    padding: 0.7rem;
+}
+
+.menu__item > img {
+    width: 40px;
+    margin-right: 1rem;
+}
+
+.menu__item p:nth-child(2) {
+    font-family: Calamity Regular;
+    font-size: 1rem;
+    color: var(--calamity-yellow);
+    margin-top: 0.3rem;
+}

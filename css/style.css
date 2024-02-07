@@ -41,11 +41,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
-    -webkit-filter: blur(7px) brightness(0.25);
-    -moz-filter: blur(7px) brightness(0.25);
-    -o-filter: blur(7px) brightness(0.25);
-    -ms-filter: blur(7px) brightness(0.25);
-    filter: blur(7px) brightness(0.25);
+    -webkit-filter: blur(7px) brightness(0.2);
+    -moz-filter: blur(7px) brightness(0.2);
+    -o-filter: blur(7px) brightness(0.2);
+    -ms-filter: blur(7px) brightness(0.2);
+    filter: blur(7px) brightness(0.2);
 }
 
 #wrapper {
@@ -110,16 +110,18 @@ h1 {
 /* MENU */
 
 main {
-    height: 50%;
+    height: 70%;
 }
 
 #container {
+    display: flex;
     margin: 5rem 0 4rem 4rem;
-    padding: 3rem;
-    height: 50%;
+    padding: 3rem 0 3rem 3rem;
+    height: 100%;
     box-shadow: inset 0 0 2px 1px rgba(128, 128, 128, 0.4); /* box shadow for smoother borders */
     clip-path: inset(-5px 3px -5px -5px); /* remove border/shadow on the right side for style purposes */
     border-right: none;
+    background-color: rgb(255, 255, 255, 0.02); /* make background a little brighter */
 }
 
 menu > li {
@@ -226,4 +228,39 @@ menu > li:hover {
     font-size: 1rem;
     color: var(--calamity-yellow);
     margin-top: 0.3rem;
+}
+
+/* CONTENT */
+
+#content {
+    width: 100%;
+    margin-left: 5rem;
+    padding: 2rem;
+    border: solid 2px #414140;
+    outline: solid 2px black;
+    border-radius: 2px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 50%);
+}
+
+#content > section {
+    width: 65%;
+    height: 100%;
+    border-bottom: 2px solid #2B362E;
+}
+
+#content h2 {
+    font-family: Calamity Bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#content__text p {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+}
+
+#content__text p:first-child {
+    color: var(--calamity-yellow);
+    text-align: right;
+    margin-bottom: 1.5em;
 }

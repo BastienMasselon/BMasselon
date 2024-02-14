@@ -245,7 +245,13 @@ menu > li:hover {
 #content > section {
     width: 65%;
     height: 100%;
-    border-bottom: 2px solid #2B362E;
+    display: flex;
+    flex-direction: column;
+}
+
+#content > section > hr {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #content h2 {
@@ -254,13 +260,15 @@ menu > li:hover {
     margin-bottom: 1rem;
 }
 
-#content__text p {
-    margin-bottom: 1em;
-    font-size: 1.1em;
-}
-
-#content__text p:first-child {
+#content__about > p {
+    font-size: 1em;
     color: var(--calamity-yellow);
     text-align: right;
     margin-bottom: 1.5em;
+}
+
+#content__text p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    line-height: 1.3em;
 }

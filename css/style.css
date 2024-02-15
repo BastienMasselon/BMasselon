@@ -260,15 +260,53 @@ menu > li:hover {
     margin-bottom: 1rem;
 }
 
-#content__about > p {
+section > p {
     font-size: 1em;
     color: var(--calamity-yellow);
     text-align: right;
     margin-bottom: 1.5em;
 }
 
-#content__text p {
+#content__about__text p {
     font-size: 1.1em;
     margin-bottom: 1em;
     line-height: 1.3em;
+}
+
+#content__skills__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content__skills__item {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-content: center;
+    background-color: black;
+    width: 6.5em;
+    height: 6.5em;
+    border: solid 2px var(--calamity-dark-gray);
+    outline: solid 2px black;
+    border-radius: 2px;
+    margin: 0 1rem 1rem 0
+}
+
+.content__skills__item > img {
+    width: 4em;
+    margin: 0.5em;
+}
+
+.content__skills__item p {
+    text-align: center;
+    font-size: 0.9em;
+    background-color: black;
+    border: solid 2px var(--calamity-dark-gray);
+    outline: solid 2px black;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    padding: 0.2em 0.5em;
+    width: fit-content;
 }

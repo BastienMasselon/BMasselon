@@ -142,6 +142,7 @@ menu > li {
 }
 
 menu > li:hover {
+    cursor: pointer;
     box-shadow: 0 0 12px 3px rgb(254, 254, 229, 0.5);
     border: 2px solid rgb(254, 254, 229);
     outline: unset;
@@ -373,4 +374,28 @@ section > p {
 .content__projects__item__description {
     margin: 0.5rem;
     line-height: 1.3em;
+}
+
+.content__contact__item {
+    font-size: 1.1em;
+    margin: 1.5em;
+}
+
+.content__contact__item > *:first-child {
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    transform-origin: left;
+}
+
+.content__contact__item > *:first-child > img {
+    width: 1.5em;
+    margin-right: 0.7em;
+}
+
+.content__contact__item > a:hover {
+    transform: scale(1.3);
+    transform-origin: left;
+    text-shadow: 0 0 7px var(--calamity-white);
+    transition: 0.5s;
 }

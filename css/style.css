@@ -17,6 +17,7 @@
     --calamity-white: rgb(254, 255, 227);
     --calamity-yellow: rgba(255, 255, 0, 0.87);
     --calamity-dark-gray: rgb(43, 43, 36);
+    --calamity-red: #C82F3E;
 }
 
 
@@ -243,7 +244,7 @@ menu > li:hover {
 }
 
 #content > section {
-    width: 65%;
+    width: 70%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -269,7 +270,7 @@ section > p {
 
 #content__about__text p {
     font-size: 1.1em;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     line-height: 1.3em;
 }
 
@@ -294,7 +295,7 @@ section > p {
 
 .content__skills__item > img {
     width: 4em;
-    margin: 0.5em;
+    margin: 0.5rem;
 }
 
 .content__skills__item p {
@@ -307,6 +308,68 @@ section > p {
     position: absolute;
     bottom: -5px;
     right: -5px;
-    padding: 0.2em 0.5em;
+    padding: 0.2rem 0.5rem;
     width: fit-content;
+}
+
+.content__projects__item {
+    position: relative;
+    border: solid 2px var(--calamity-dark-gray);
+    outline: solid 2px black;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+}
+
+.content__projects__item > div {
+    display: flex;
+}
+
+.content__projects__item > div > a {
+    width: 50%;
+    border-right: solid 2px var(--calamity-dark-gray);
+    border-bottom: solid 2px var(--calamity-dark-gray);
+    border-radius: 2px;
+}
+
+.content__projects__item > div > a > img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.content__projects__item h3 {
+    font-family: Calamity Bold;
+    color: var(--calamity-white);
+    font-size: 1.2em;
+    background-color: black;
+    border: solid 2px var(--calamity-dark-gray);
+    outline: solid 2px black;
+    border-radius: 2px;
+    padding: 0.2rem;
+    position: absolute;
+    top: -15px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content__projects__item__infos {
+    margin-top: 1em;
+    padding: 0.5rem;
+}
+
+.content__projects__item__status {
+    color: var(--calamity-red);
+    margin-bottom: 1rem;
+}
+
+.content__projects__item__stacks {
+    color: var(--calamity-yellow);
+}
+
+.content__projects__item__stacks > li {
+    font-size: 0.9em;
+    margin-bottom: 0.3rem;
+}
+
+.content__projects__item__description {
+    margin: 0.4rem;
 }

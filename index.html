@@ -6,6 +6,7 @@
     <title>Bastien Masselon</title>
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <script type="module" src="js/app.js"></script>
 </head>
 
 <body>
@@ -36,7 +37,7 @@
         <main>
             <div id="container">
                 <menu>
-                    <li>
+                    <li value="content__about">
                         <div class="menu__item">
                             <img src="./images/SpeechBubble.svg" alt="Speech bubble"/>
                             <div class="menu__item__title">
@@ -48,7 +49,7 @@
                             <div class="menu__selector--active"></div>
                         </div>
                     </li>
-                    <li>
+                    <li value="content__skills">
                         <div class="menu__item">
                             <img src="./images/HtmlTag.svg" alt="Speech bubble"/>
                             <div class="menu__item__title">
@@ -60,7 +61,7 @@
                             <div class="menu__selector--inactive"></div>
                         </div>
                     </li>
-                    <li>
+                    <li value="content__projects">
                         <div class="menu__item">
                             <img src="./images/DigitalBrush.svg" alt="Speech bubble"/>
                             <div class="menu__item__title">
@@ -72,7 +73,7 @@
                             <div class="menu__selector--inactive"></div>
                         </div>
                     </li>
-                    <li>
+                    <li value="content__contact">
                         <div class="menu__item">
                             <img src="./images/Envelope.svg" alt="Speech bubble"/>
                             <div class="menu__item__title">
@@ -88,7 +89,7 @@
 
                 <div id="content">
                     <!-- ABOUT SECTION -->
-                    <section id="content__about" style="display: none;">
+                    <section id="content__about">
                         <h2>À propos</h2>
                         <hr color="#2B362E" size="2px"/>
                         <p>Quelques mots sur moi</p>
@@ -216,7 +217,7 @@
                     </section>
 
                     <!-- CONTACT SECTION -->
-                    <section id="content__contact">
+                    <section id="content__contact" style="display: none;">
                         <h2>Contact</h2>
                         <hr color="#2B362E" size="2px"/>
                         <p>N'hésitez pas à me joindre !</p>
@@ -250,8 +251,9 @@
                         </div>
                         <hr color="#2B362E" size="2px"/>
                     </section>
-                </div>
-            </div>
+
+                </div> <!-- #content -->
+            </div> <!-- #container -->
         </main>
 
         <footer></footer>

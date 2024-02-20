@@ -42,11 +42,19 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
-    -webkit-filter: blur(7px) brightness(0.2);
-    -moz-filter: blur(7px) brightness(0.2);
-    -o-filter: blur(7px) brightness(0.2);
-    -ms-filter: blur(7px) brightness(0.2);
-    filter: blur(7px) brightness(0.2);
+    -webkit-filter: blur(7px) brightness(0.3);
+    -moz-filter: blur(7px) brightness(0.3);
+    -o-filter: blur(7px) brightness(0.3);
+    -ms-filter: blur(7px) brightness(0.3);
+    filter: blur(7px) brightness(0.3);
+}
+
+#background-decoration {
+    height: 90vh;
+    color: #9b9999;
+    position: fixed;
+    bottom: -10px;
+    left: 75%;
 }
 
 #wrapper {
@@ -64,6 +72,7 @@ body {
 
 header {
     display: flex;
+    position: relative;
     justify-content: space-between;
     padding: 3rem 4rem;
 }
@@ -80,6 +89,9 @@ header {
 
 #title {
     text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 h1 {
@@ -122,7 +134,7 @@ main {
     box-shadow: inset 0 0 2px 1px rgba(128, 128, 128, 0.4); /* box shadow for smoother borders */
     clip-path: inset(-5px 3px -5px -5px); /* remove border/shadow on the right side for style purposes */
     border-right: none;
-    background-color: rgb(255, 255, 255, 0.02); /* make background a little brighter */
+    background-color: rgb(255, 255, 255, 0.04); /* make background a little brighter */
 }
 
 menu > li {
@@ -246,6 +258,7 @@ menu > li:hover {
 
 .section__content {
     height: 25em;
+    padding-right: 1rem;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -341,7 +354,7 @@ section > p {
 
 .content__projects__item {
     position: relative;
-    width: 95%;
+    width: 100%;
     border: solid 2px var(--calamity-dark-gray);
     outline: solid 2px black;
     border-radius: 2px;

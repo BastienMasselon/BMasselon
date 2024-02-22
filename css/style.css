@@ -67,6 +67,9 @@ body {
     z-index: 2;
 }
 
+#navbar {
+    display: none;
+}
 
 /* HEADER */
 
@@ -88,6 +91,7 @@ header {
 }
 
 #title {
+    width: 100%;
     text-align: center;
     position: absolute;
     left: 50%;
@@ -96,13 +100,14 @@ header {
 
 h1 {
     font-family: Calamity Bold;
-    font-size: 2rem;
+    font-size: 2em;
     text-align: center;
 }
 
 #title > p {
     text-align: center;
     color: var(--calamity-yellow);
+    margin-top: 0.5rem;
 }
 
 #rupees {
@@ -297,7 +302,7 @@ menu > li:hover {
 
 #content h2 {
     font-family: Calamity Bold;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     margin-bottom: 1rem;
 }
 
@@ -317,6 +322,7 @@ section > p {
 #content__skills__container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .content__skills__item {
@@ -330,7 +336,7 @@ section > p {
     border: solid 2px var(--calamity-dark-gray);
     outline: solid 2px black;
     border-radius: 2px;
-    margin: 0 1rem 1rem 0
+    margin: 0 1.2rem 1.2rem 0
 }
 
 .content__skills__item > img {
@@ -360,7 +366,7 @@ section > p {
     outline: solid 2px black;
     border-radius: 2px;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .content__projects__item > div {
@@ -445,6 +451,11 @@ section > p {
 /* TABLET LAYOUT */
 
 @media screen and (max-width: 1280px) {
+
+    #background-decoration{
+        left: 50%;
+    }
+
     #title {
         top: 6rem;
     }
@@ -471,7 +482,105 @@ section > p {
 
 /* MOBILE LAYOUT */
 
+#navbar {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 160px;
+    background-color: black;
+    border-top: solid 2px var(--calamity-dark-gray);
+    outline: solid 2px black;
+}
+
+#navbar > ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+.navbar__item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    padding: 1rem;
+}
+
+.navbar__item--active {
+    color: var(--calamity-yellow)
+}
+
+.navbar__item--active > p {
+    text-shadow: 0 0 5px var(--calamity-yellow);
+}
+
+.navbar__item > svg {
+    width: 3rem;
+    height: auto;
+}
+
 @media screen and (max-width: 600px) {
+
+    #background-image {  
+        -webkit-filter: blur(12px) brightness(0.3);
+        -moz-filter: blur(12px) brightness(0.3);
+        -o-filter: blur(12px) brightness(0.3);
+        -ms-filter: blur(12px) brightness(0.3);
+        filter: blur(12px) brightness(0.3);
+    }
+
+    #background-decoration{
+        height: 1000px;
+    }
+
+    #navbar {
+        display: block;
+    }
+
+    #heart-gauge, #rupees {
+        display: none;
+    }
+
+    menu {
+        display: none;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    #title {
+        top: 4rem;
+    }
+
+    #title > p {
+        font-size: 1.8em;
+    }
+    
+    #container {
+        clip-path: inset(-5px 3px -5px 3px);
+        padding-left: 0;
+        margin-left: 0;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+
+    #content {
+        font-size: 1.9em;
+        margin-top: 0;
+    }
+
+    #content > section {
+        width: auto;
+        padding: 0 1em 0 1em;
+    }
 
     .section__content {
         height: auto;

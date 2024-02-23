@@ -434,6 +434,12 @@ section > p {
     align-items: center;
     transition: 0.3s;
     transform-origin: left;
+    
+}
+
+.content__contact__item > *:first-child > p {
+    width: 90%;
+    overflow-wrap: break-word;
 }
 
 .content__contact__item > *:first-child > img {
@@ -466,7 +472,7 @@ section > p {
     }
 
     menu > li {
-        min-width: 70%;
+        width: 70%;
     }
 
     #content {
@@ -488,7 +494,7 @@ section > p {
     bottom: 0;
     right: 0;
     left: 0;
-    height: 160px;
+    height: 170px;
     background-color: black;
     border-top: solid 2px var(--calamity-dark-gray);
     outline: solid 2px black;

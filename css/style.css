@@ -25,7 +25,7 @@
 
 body {
     min-height: 100vh;
-    min-width: 100vh;
+    min-width: 100vw;
     background-color: black;
 }
 
@@ -264,6 +264,7 @@ menu > li:hover {
 .section__content {
     height: 25em;
     padding-right: 1rem;
+    padding-top: 0.5rem;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -381,8 +382,9 @@ section > p {
 }
 
 .content__projects__item > div > a > img {
-    object-fit: contain;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .content__projects__item h3 {
@@ -494,7 +496,7 @@ section > p {
     bottom: 0;
     right: 0;
     left: 0;
-    height: 170px;
+    height: 80px;
     background-color: black;
     border-top: solid 2px var(--calamity-dark-gray);
     outline: solid 2px black;
@@ -505,8 +507,8 @@ section > p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 4rem;
-    padding-left: 4rem;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
 }
 
 .navbar__item {
@@ -515,7 +517,7 @@ section > p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1.2em;
+    font-size: 0.6em;
     padding: 1rem;
 }
 
@@ -528,7 +530,7 @@ section > p {
 }
 
 .navbar__item > svg {
-    width: 3rem;
+    width: 1.3rem;
     height: auto;
 }
 
@@ -543,7 +545,7 @@ section > p {
     }
 
     #background-decoration{
-        height: 1000px;
+        height: 500px;
     }
 
     #navbar {
@@ -559,28 +561,29 @@ section > p {
     }
 
     h1 {
-        font-size: 3.5em;
+        font-size: 1.8em;
     }
 
     #title {
-        top: 4rem;
+        top: 1.6rem;
     }
 
     #title > p {
-        font-size: 1.8em;
+        font-size: 1em;
     }
     
     #container {
         clip-path: inset(-5px 3px -5px 3px);
-        padding-left: 0;
+        padding: 2rem 0 2rem 0;
         margin-left: 0;
-        margin-top: 8rem;
-        margin-bottom: 8rem;
+        margin-top: 0.9rem;
+        margin-bottom: 10rem;
     }
 
     #content {
-        font-size: 1.9em;
+        font-size: 0.9em;
         margin-top: 0;
+        padding: 2rem 1rem 2rem 1rem;
     }
 
     #content > section {
@@ -591,5 +594,11 @@ section > p {
     .section__content {
         height: auto;
         overflow-y: unset;
+    }
+
+    .content__skills__item {
+        width: 5.8em;
+        height: 5.8em;
+        margin: 0.5em;
     }
 }

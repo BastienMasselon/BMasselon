@@ -78,7 +78,7 @@ header {
     position: relative;
     justify-content: space-between;
     align-content: center;
-    padding: 3rem 4rem;
+    padding: 3em 4em;
 }
 
 #heart-gauge {
@@ -86,8 +86,8 @@ header {
 }
 
 .heart-gauge__heart {
-    width: 19px;
-    margin-right: 2px;
+    width: 1.2em;
+    margin-right: 0.2em;
 }
 
 #title {
@@ -95,6 +95,7 @@ header {
     text-align: center;
     position: absolute;
     left: 50%;
+    top: 3.5em;
     transform: translateX(-50%);
 }
 
@@ -107,7 +108,7 @@ h1 {
 #title > p {
     text-align: center;
     color: var(--calamity-yellow);
-    margin-top: 0.5rem;
+    margin-top: 0.5em;
 }
 
 #rupees {
@@ -116,12 +117,12 @@ h1 {
 }
 
 #rupees > p {
-    font-size: 1.1rem;
+    font-size: 1.1em;
 }
 
 .rupees__icon {
-    height: 32px;
-    margin-right: 10px;
+    height: 2em;
+    margin-right: 0.7em;
 }
 
 
@@ -133,8 +134,8 @@ main {
 
 #container {
     display: flex;
-    margin: 2rem 0 4rem 4rem;
-    padding: 3rem 0 3rem 3rem;
+    margin: 2em 0 4em 4em;
+    padding: 3em 0 3em 3em;
     height: 100%;
     box-shadow: inset 0 0 2px 1px rgba(128, 128, 128, 0.4); /* box shadow for smoother borders */
     clip-path: inset(-5px 3px -5px -5px); /* remove border/shadow on the right side for style purposes */
@@ -148,10 +149,10 @@ menu > li {
     align-items: center;
     background-color: black;
     font-family: Calamity Bold;
-    font-size: 1.6rem;
+    font-size: 1.6em;
     width: 24em;
-    height: 4.5rem;
-    margin-bottom: 1.5rem;
+    height: 2.8em;
+    margin-bottom: 0.9em;
     border: solid 2px var(--calamity-dark-gray);
     outline: solid 2px black;
     border-radius: 2px;
@@ -178,34 +179,34 @@ menu > li:hover {
     justify-content: center;
     position: relative;
     background-color: var(--calamity-dark-gray);
-    width: 2rem;
+    width: 1.4em;
     height: calc(100% - 4px);
     margin: 2px 2px 2px 0;
 }
 
 .menu__selector--inactive {
     background-color: black;
-    width: 7px;
-    height: 7px;
+    width: 0.3em;
+    height: 0.3em;
     border-radius: 100%;
 }
 
 .menu__selector--active {
     background-color: var(--calamity-yellow);
-    width: 6px;
-    height: 6px;
+    width: 0.3em;
+    height: 0.3em;
     border: 3px solid #2B2B24;
     outline: 2px solid var(--calamity-yellow);
     border-radius: 100%;
-    box-shadow: 0 0 8px 4px var(--calamity-yellow);
+    box-shadow: 0 0 0.4em 0.2em var(--calamity-yellow);
 }
 
 .menu__selector--active::after {
     position: absolute;
     background-color: transparent;
     border: 1px solid var(--calamity-yellow);
-    width: 10px;
-    height: 10px;
+    width: 0.4em;
+    height: 0.4em;
     border-radius: 100%;
     margin: auto;
     top: 0;
@@ -234,27 +235,27 @@ menu > li:hover {
 .menu__item {
     display: flex;
     justify-content: center;
-    padding: 0.7rem;
+    padding: 0.5em;
 }
 
 .menu__item > img {
-    width: 40px;
-    margin-right: 1rem;
+    width: 1.5em;
+    margin-right: 0.7em;
 }
 
 .menu__item p:nth-child(2) {
     font-family: Calamity Regular;
-    font-size: 1rem;
+    font-size: 0.6em;
     color: var(--calamity-yellow);
-    margin-top: 0.3rem;
+    margin-top: 0.3em;
 }
 
 /* CONTENT */
 
 #content {
     width: 100%;
-    margin-left: 5rem;
-    padding: 2rem;
+    margin-left: 5em;
+    padding: 2em;
     border: solid 2px #414140;
     outline: solid 2px black;
     border-radius: 2px;
@@ -263,8 +264,8 @@ menu > li:hover {
 
 .section__content {
     height: 25em;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
+    padding-right: 1em;
+    padding-top: 0.5em;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -273,19 +274,19 @@ menu > li:hover {
 {
 	background-color: var(--calamity-dark-gray);
     border-radius: 1px;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
+    margin-bottom: 4em;
+    margin-top: 4em;
 }
 
 .section__content::-webkit-scrollbar
 {
-	width: 3px;
+	width: 0.25em;
 	background-color: transparent;
 }
 
 .section__content::-webkit-scrollbar-thumb
 {
-	width: 3px;
+	width: 0.25em;
     background-color: var(--calamity-white);
 }
 
@@ -304,7 +305,7 @@ menu > li:hover {
 #content h2 {
     font-family: Calamity Bold;
     font-size: 1.5em;
-    margin-bottom: 1rem;
+    margin-bottom: 0.3em;
 }
 
 section > p {
@@ -316,7 +317,7 @@ section > p {
 
 #content__about__text p {
     font-size: 1.1em;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
     line-height: 1.3em;
 }
 
@@ -337,12 +338,12 @@ section > p {
     border: solid 2px var(--calamity-dark-gray);
     outline: solid 2px black;
     border-radius: 2px;
-    margin: 0 1.2rem 1.2rem 0
+    margin: 0 1.1em 1.1em 0;
 }
 
 .content__skills__item > img {
     width: 4em;
-    margin: 0.5rem;
+    margin: 0.5em;
 }
 
 .content__skills__item p {
@@ -355,7 +356,7 @@ section > p {
     position: absolute;
     bottom: -5px;
     right: -5px;
-    padding: 0.2rem 0.5rem;
+    padding: 0.2em 0.5em;
     width: fit-content;
 }
 
@@ -366,8 +367,8 @@ section > p {
     border: solid 2px var(--calamity-dark-gray);
     outline: solid 2px black;
     border-radius: 2px;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
+    margin-top: 1em;
+    margin-bottom: 4em;
 }
 
 .content__projects__item > div {
@@ -395,21 +396,21 @@ section > p {
     border: solid 2px var(--calamity-dark-gray);
     outline: solid 2px black;
     border-radius: 2px;
-    padding: 0.3rem 0.5rem;
+    padding: 0.3em 0.5em;
     position: absolute;
-    top: -15px; 
+    top: -1em; 
     left: 50%;
     transform: translateX(-50%);
 }
 
 .content__projects__item__infos {
     margin-top: 1em;
-    padding: 0.5rem;
+    padding: 0.5em;
 }
 
 .content__projects__item__status {
     color: var(--calamity-red);
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 .content__projects__item__stacks {
@@ -418,11 +419,11 @@ section > p {
 
 .content__projects__item__stacks > li {
     font-size: 0.9em;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.3em;
 }
 
 .content__projects__item__description {
-    margin: 0.7rem;
+    margin: 0.7em;
     line-height: 1.3em;
 }
 
@@ -600,5 +601,31 @@ section > p {
         width: 5.8em;
         height: 5.8em;
         margin: 0.5em;
+    }
+}
+
+/* 2K SCREEN LAYOUT */
+
+@media screen and (min-width: 2500px) {
+
+    header {
+        font-size: 1.5em;
+    }
+
+    #container {
+        font-size: 1.6em;
+    }
+}
+
+/* 4K SCREEN LAYOUT */
+
+@media screen and (min-width: 3800px) {
+
+    header {
+        font-size: 2.1em;
+    }
+
+    #container {
+        font-size: 2.3em;
     }
 }

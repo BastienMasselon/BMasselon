@@ -608,7 +608,7 @@ section > p {
 
 /* 2K SCREEN LAYOUT */
 
-@media screen and (min-width: 2500px) {
+@media screen and (min-width: 2400px) {
 
     header {
         font-size: 1.5em;
@@ -621,7 +621,7 @@ section > p {
 
 /* 4K SCREEN LAYOUT */
 
-@media screen and (min-width: 3800px) {
+@media screen and (min-width: 3700px) {
 
     header {
         font-size: 2.1em;

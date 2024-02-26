@@ -574,7 +574,7 @@ section > p {
     }
     
     #container {
-        clip-path: inset(-5px 3px -5px 3px);
+        clip-path: inset(-5px 0px -5px 0px);
         padding: 2rem 0 2rem 0;
         margin-left: 0;
         margin-top: 0.9rem;
@@ -585,6 +585,8 @@ section > p {
         font-size: 0.9em;
         margin-top: 0;
         padding: 2rem 1rem 2rem 1rem;
+        border-left: none;
+        border-right: none;
     }
 
     #content > section {

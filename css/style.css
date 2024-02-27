@@ -575,10 +575,12 @@ section > p {
     
     #container {
         clip-path: inset(-5px 0px -5px 0px);
-        padding: 2rem 0 2rem 0;
+        padding: 1rem 0 2rem 0;
         margin-left: 0;
         margin-top: 0.9rem;
-        margin-bottom: 10rem;
+        margin-bottom: 6rem;
+        box-shadow: none;
+        background-color: transparent;
     }
 
     #content {
@@ -611,11 +613,11 @@ section > p {
 @media screen and (min-width: 2400px) {
 
     header {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     #container {
-        font-size: 1.6em;
+        font-size: 1.5em;
     }
 }
 

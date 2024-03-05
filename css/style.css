@@ -229,7 +229,7 @@ menu > li:hover {
     justify-content: center;
     position: relative;
     background-color: var(--calamity-dark-gray);
-    width: 1.4em;
+    width: 2rem;
     height: calc(100% - 4px);
     margin: 2px 2px 2px 0;
 }
@@ -243,8 +243,8 @@ menu > li:hover {
 
 .menu__selector--active {
     background-color: var(--calamity-yellow);
-    width: 0.3em;
-    height: 0.3em;
+    width: 6px;
+    height: 6px;
     border: 3px solid #2B2B24;
     outline: 2px solid var(--calamity-yellow);
     border-radius: 100%;
@@ -255,8 +255,8 @@ menu > li:hover {
     position: absolute;
     background-color: transparent;
     border: 1px solid var(--calamity-yellow);
-    width: 0.4em;
-    height: 0.4em;
+    width: 10px;
+    height: 10px;
     border-radius: 100%;
     margin: auto;
     top: 0;
@@ -674,6 +674,21 @@ section > p {
     #container {
         font-size: 1.5em;
     }
+
+    .menu__selector {
+        width: 3rem;
+    }
+    
+    .menu__selector--active {
+        width: 10px;
+        height: 10px;
+        border: 4px solid #2B2B24;
+    }
+    
+    .menu__selector--active::after {
+        width: 14px;
+        height: 14px;
+      }
 }
 
 /* 4K SCREEN LAYOUT */
